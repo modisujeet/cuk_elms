@@ -1,0 +1,23 @@
+{
+  "name": "cuk_elms",
+  "version": "1.0.0",
+  "description": "cuk employee leave managment system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/modisujeet/cuk_elms.git"
+  },
+  "author": "sujeet kumar modi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/modisujeet/cuk_elms/issues"
+  },
+  "homepage": "https://github.com/modisujeet/cuk_elms#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
+}
