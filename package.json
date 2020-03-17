@@ -4,7 +4,8 @@
   "description": "cuk employee leave managment system",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,17 @@
   },
   "homepage": "https://github.com/modisujeet/cuk_elms#readme",
   "dependencies": {
+    "bcrypt": "^4.0.0",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.4",
     "ejs": "^3.0.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-formidable": "^1.2.0",
+    "express-session": "^1.17.0",
+    "mongoose": "^5.8.11",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "validator": "^12.2.0"
   }
 }

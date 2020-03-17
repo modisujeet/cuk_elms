@@ -1,0 +1,94 @@
+<!-- main section of page -->
+<div class="row">
+    <div class="col-3">
+        <div id="side-out">
+            <!-- profile section -->
+                <div class="sidebar-profile">
+                    <div class="sidebar-profile-image">
+                        <img src="../images/img.jpg" class="circle" alt="admin">
+                    </div>
+                    <div class="sidebar-profile-info">
+                    </div>
+                </div>
+                <!-- sidebae menu list -->
+
+                <div class="sidebar-menu">
+                        <a href="/admins/dashboard">	
+                            <!-- 	TO DO LATER (dashboard) -->
+                            <i class="fas fa-tachometer-alt"></i>
+                            Dashboard
+                        </a>
+                    <!-- Department -->
+                        <button class="dropdown-btn">
+                            <i class="fas fa-grip-horizontal "></i>
+                            Department
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="/admins/add-department">Add Department</a>
+                            <a href="#">Manage Department</a>
+                        </div>
+                    
+                    <!-- Leave type  -->
+                        <button class="dropdown-btn">
+                            <i class="fas fa-hand-point-right "></i>
+                                Leave Type
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="/admins/add-leave">Add Leave</a>
+                            <a href="#">Manage Leave</a>
+                        </div>
+                        <button class="dropdown-btn">
+                <!-- TODO LATER -->
+                            <i class="fas fa-users "></i>
+                            Employees
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="/admins/add-employee">Add Employee</a>
+                            <a href="#">Manage Employee</a>
+                        </div>
+                            <button class="dropdown-btn">
+                <!-- TODO LATER -->
+                            <i class="fas fa-bars "></i>
+                            Leave Managment
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="#">All Leaves</a>
+                            <a href="#">Pending Leaves</a>
+                            <a href="#">Approved Leaves</a>
+                            <a href="#">Not Approved Leaves</a>
+                        </div>
+                        
+                        <a href="/admins/sign-out">
+                            <!-- TODO LATER -->
+                            <i class="fas fa-sign-out-alt "></i>
+                            Sign Out
+                        </a>
+                    
+                </div>
+        </div>
+    </div>
+
+    
+   
+</div>				
+<script> 
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>

@@ -1,0 +1,55 @@
+
+
+        <%- include('_admin'); %>
+    
+    <!-- ********************** ADD LEAVE CODE START HERE ***************************  -->
+    <div class="col-9">
+        <h2 id="addemployeetitle">Add Employee</h2>
+        <div class="add-employee">
+            <form action="">
+                <div id="input-left">	
+                        <label class="lab" for="emp"><b>Employee Code</b></label>
+                        <input class="inp" type="text" name="emp-code" placeholder="Employee Registration Number" required="true">
+                        <label  class="lab" for="fname"><b>First Name</b></label>
+                        <input class="inp" type="text" name="fname" placeholder="Sujeet" required="true">
+                        <label class="lab" for="lname"><b>Last Name</b></label>
+                        <input class="inp" type="text" name="lname" placeholder="Kumar" required="true">
+                        <label class="lab" for="label"><b>Email-id</b></label>
+                        <input class="inp" type="text" name="mail" placeholder="abc.123@gmail.com" required="true">
+                        <label class="lab" for="password"><b>Password</b></label>
+                        <input class="inp" type="pas" name="pass" placeholder="**********" required="true">
+                </div>		
+
+                <div id="input-center">	
+                        <label class="lab" for="confrmpass"><b>Confirm Password</b></label>
+                        <input class="inp" type="password" name="confrmpass" placeholder="**********" >
+                        <label class="lab" for="gender"><b>Choose Your Gender</b></label>
+                        <select id="genders">
+                            <option value="Male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="others">Other</option>
+                        </select>
+                        <label class="lab" for="department"><b>Your Department</b></label>
+                        <input class="inp" type="text" name="department" placeholder="MCA" required="true">
+                        <label class="lab" for="birthday"><b>Birthday</b></label>
+                        <input class="inp" type="date" id="birthday" name="birthday" required="true">
+                        <label class="lab" for="address"><b>Address</b></label>
+                        <input class="inp" type="text" name="address" placeholder="Address" required="true">
+                </div>		
+
+                <div id="input-right">	
+                        <label class="lab" for="city"><b>City/Town</b></label>
+                        <input class="inp" type="text" name="city" placeholder="Gulbarga" required="true">
+                        <label class="lab" for="state"><b>State</b></label>
+                        <input class="inp" type="text" name="state" placeholder="Karnatka" required="true">
+                        <label class="lab" for="pin"><b>Pin Code</b></label>
+                        <input class="inp" type="tet" name="pincode" placeholder="567899" required="true">
+                        <label class="lab" for="number"><b>Mobile Number</b></label>
+                        <input class="inp" type="text" name="pnumber" placeholder="9999999999" required="true">
+                        <button type="submit">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+	

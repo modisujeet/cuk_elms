@@ -1,0 +1,831 @@
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  [class*= "col-9"]{
+    margin-left: 350px;
+  }
+  
+  html {
+    font-family: "Lucida Sans", sans-serif;
+  }
+  
+.header
+{
+    height: 95px;
+    width: 100%;
+    /* border: 2px solid black; */
+    margin: 0;
+    background-color:white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+     position: fixed; 
+	/* padding-top: 15px; */
+
+
+}
+/* logo of the web-application */
+.logo-cont
+{
+    height: 75px;
+    width: 75px;
+    border: 1px solid whitesmoke;
+    position: relative;
+    /* margin: 0px; */
+}
+ img{
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    
+}
+#heading
+{
+    position:  absolute;
+    margin-top: -60px;
+    font-size: 2.9rem;
+    font-family: Libre Baskerville;
+    margin-left: 83px;
+    color: darkslateblue;
+}
+
+.web-title
+{
+  height: 20px;
+  width: 100%;
+  /*border: 1px solid whitesmoke;*/
+  position: absolute;
+  color: darkslateblue;
+}
+
+/********************end of header Section here***************************/
+.menu{
+  margin-top: 100px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    text-decoration: none;
+    margin-top:10px;
+    padding-top: 10px;
+    background-color: darkslateblue;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  .menu a {
+    color: white;
+    cursor: pointer;
+  }
+  
+
+  .menu li:hover {
+    background-color:dimgray;
+  }
+
+  .aside {
+    
+    padding: 15px;
+    color: darkslateblue;
+    height: 400px;
+    text-align : left;
+    letter-spacing : 0.01111em;
+    font-size: 14px;
+    line-height: 1.5rem;
+    margin-top: -100px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  .aside p{
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  /********************** login form section **********************/
+  
+  /* Full-width input fields */
+input[type=text], input[type=password] , input[type=email]{
+    width: 100%;
+    padding: 8px 16px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+.modal
+{
+    margin-top: 100px;
+    height: 450px;
+    /* margin-left: 250px; */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width:auto;
+    position: relative;
+    border: 2px solid whitesmoke;
+    
+}
+.cuklogo
+{
+  height:100px;
+  width: 300px;
+  margin-top: -10px;
+  margin-left: 50px;
+  background-image: url('../images/download.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.container
+{
+  margin-top: -35px;
+    padding: 5px;  
+}
+.container label{
+  color: darkslateblue;
+
+}
+.container button{
+  padding: 8px 16px;
+  color: darkslateblue;
+  font-weight: 700;
+  margin-top: 5px!important;
+  
+}
+.container2{
+  margin-top: -30px!important;
+}
+.container2 span
+{
+  color: darkslateblue;
+  margin-top: 10px;
+}
+
+.container2 button{
+  padding: 8px 16px;
+  color: darkslateblue;
+  font-weight: 700;
+  margin: 7px;
+}
+/********************** END OF login form section ******************************/
+.cont{
+  height: 300px;
+  width: auto;
+  margin-top: 100px;
+  border: 1px solid black; 
+}
+
+ 
+/***************************** from here the css of admin.ejs start here ***************************** */
+      /*aside section of web-page*/
+      #side-out
+      {
+        height: 470px;
+        width: 300px;
+        margin-left:-15px;
+        /* background-color: red; */
+        position: fixed;
+        margin-top: 80px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      }
+      .sidebar-profile
+      {
+        height: 130px;
+        width:300px;
+        display: inline-block;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        position: absolute;
+      }
+      .sidebar-profile-image
+      { 
+          /*margin: 30px;*/
+          width: 90px;
+          height: 90px;
+          display: inline-block;
+          margin-top: 20px;
+          margin-left: 10%;
+          border:1px solid black;
+          border-radius: 50%;
+          /*background-color: navy;*/
+      }
+      .circle
+      {
+        border-radius: 50%;
+        /*position: absolute;*/
+        width: 90px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+        height: 90px;
+      }
+      .sidebar-profile-info
+      {
+        display: inline-block;
+        height: 90px;
+        margin-top: 20px;
+        margin-left:20px;
+        width: 120px;
+        text-align: center;
+        color: darkslateblue;
+        font-weight: 900;
+        font-size: 1.8rem;
+        /*border: 1px solid black;*/
+        position: absolute;
+      }
+
+/*side bar menu list */
+      .sidebar-menu{
+        height: 350px;
+        position: absolute;
+        box-shadow: 0 1px 7px rgba(0,0,0,0.12), 0 1px 9px rgba(0,0,0,0.24);
+        z-index: 1;
+        width: 300px;
+        overflow-x:hidden;
+        padding-top: 20px;
+        margin-top: 135px;
+      }
+
+    .sidebar-menu  a, .dropdown-btn {
+        padding: 6px 8px 16px 16px;
+        text-decoration: none;
+        font-size: 16px;
+        color: darkslateblue;
+        display: block;
+        border: none;
+        z-index: -900;
+        width: 300px;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+      }
+      .sidenav a:hover, .dropdown-btn:hover {
+        background-color: whitesmoke;
+
+      }
+
+      .dropdown-container {
+          display: none;
+          background-color: whitesmoke;
+          padding-left: 8px;
+        }
+
+        /* Optional: Style the caret down icon */
+        .fa-caret-down {
+          float: right;
+          padding-right: 7px;
+        }  
+
+/********col-9 section dashboard styling********/
+  
+        .card-container
+        {
+          height: 132px;
+          width: 1000px;
+          margin-top: 90px;
+          margin-left: -10px;
+          /*border:1px solid teal;*/
+          position: relative;
+        }
+        #card1
+        {
+          height: 130px;
+          width: 305px;
+          position: absolute;
+          color: darkslateblue;
+          background-color: whitesmoke;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+          /*border:1px solid black;*/
+        }
+        #card2
+        {
+          height: 130px;
+          width: 305px;
+          color: darkslateblue;
+          margin-left: 335px;
+          position: absolute;
+          background-color:whitesmoke;
+          /*border:1px solid black;*/
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+        }
+
+        #card3
+        {
+          height: 130px;
+          color: darkslateblue;
+          width: 305px;
+          margin-left: 670px;
+          position: absolute;
+          background-color: whitesmoke;
+          /*border:1px solid black;*/
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+        }
+        .card-heading
+         {
+          text-align: center;
+          color: darkslateblue;
+         }
+        p
+         {
+          text-align: center;
+          font-weight: 600;
+          font-size: 20px;
+          color: darkslateblue;
+         }
+         /****************** DASHBOARD MAIN-CONTAINER CSS CODE ***************/
+
+         .main-container{
+          height: 300px;
+          width: 1000px;
+          background-color: whitesmoke;
+          border:1px solid whitesmoke;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+          margin-left: -10px;
+          margin-top: 20px;
+          position: relative;
+         }
+         .main-container ul li
+         {
+          list-style-type: none;
+          display: inline;
+          color: darkslateblue;
+          padding: 5px 40px;
+         } 
+
+
+
+/********************** ADD DEPARTMENT CSS CODE START HERE ********************/
+.add-department
+{
+  height: 400px;
+  width: 500px;
+  margin-top: 5px;
+  margin-left: 50px;
+  background-color: whitesmoke;
+  position: absolute;
+  box-shadow: 0 1px 7px rgba(0,0,0,0.12), 0 1px 9px rgba(0,0,0,0.24);
+}
+#addeparttitle
+{
+  margin-left: 50px;
+  margin-top: 90px;
+  color: darkslateblue;
+}
+label
+{
+  display: block;
+  margin-left:35px;
+  margin-top: 15px;
+  color: darkslateblue;
+}
+input[type=text] {
+  width: 60%;
+  padding: 12px 20px;
+  margin:10px 25px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button[type=submit] {
+  display: block;
+  padding: 12px 24px;
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 40px;
+
+  background-color: darkslateblue;
+
+}
+
+/********************** ADD DEPARTMENT CSS CODE END HERE ********************/
+
+/*************** ADD LEAVE TYPE CSS CODE ****************/
+  .add-leave
+  {
+  height: 300px;
+  width: 500px;
+  margin-top: 15px;
+  margin-left: 50px;
+  background-color: whitesmoke;
+  position: absolute;
+  box-shadow: 0 1px 7px rgba(0,0,0,0.12), 0 1px 9px rgba(0,0,0,0.24);
+  }
+  #addleavetitle
+  {
+  margin-left: 50px;
+  margin-top: 90px;
+  color: darkslateblue;
+  }
+  label
+  {
+  display: block;
+  margin-left:35px;
+  margin-top: 15px;
+  color: darkslateblue;
+  }
+  input[type=text] {
+  width: 60%;
+  padding: 12px 20px;
+  margin:10px 25px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  }
+  button[type=submit] {
+  display: block;
+  padding: 12px 24px;
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 40px;
+
+  background-color: darkslateblue;
+
+  }
+
+
+/*************** ADD EMPLOYEE CSS CODE START HERE****************/
+#addemployeetitle
+{
+  margin-left: 50px;
+  margin-top: 70px;
+  color: darkslateblue;
+}
+.add-employee
+{
+height: 400px;
+width: 900px;
+/*display: flex;*/
+/* margin-top: 5px; */
+margin-left: 50px;
+background-color: whitesmoke;
+box-shadow: 0 1px 7px rgba(0,0,0,0.12), 0 1px 9px rgba(0,0,0,0.24);
+}
+#input-left 
+{
+  width: 33%;
+  height: 400px;
+  float: left;
+  /*border:2px solid black;*/
+  padding: 10px;
+}
+#input-center 
+{
+  margin-left: 35%;
+  width: 31%;
+  height: 400px;
+  padding: 10px;
+  /*border:2px solid black;*/
+} 
+ #input-right
+{
+  width: 31%;
+  height: 400px;
+  float: right;
+  margin-top: -400px;
+  padding: 10px;
+  /*border:2px solid black;*/
+}
+.lab
+{
+display: block;
+margin-left:35px;
+color: darkslateblue;
+margin-top: 5px;
+}
+.inp {
+width: 80%!important;
+padding: 8px 16px!important ;
+margin: 8px 16px!important;
+display: inline-block!important;
+border: 1px solid #ccc;
+box-sizing: border-box!important;
+}
+select
+{
+ width: 80%;
+padding: 8px 16px;
+margin: 8px 16px;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box
+}
+
+
+button[type=submit] {
+display: block;
+padding: 12px 24px;
+color: whitesmoke;
+font-weight: 700;
+font-size: 14px;
+margin: 40px;
+
+background-color: darkslateblue;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer Section */
+.footer
+{
+	width: 100%;
+	height: 40px;
+	background-color: white;
+	color: darkslateblue;
+    bottom: 0;	
+    box-shadow: 0 1px 3px rgba(0,0,0,0.72), 0 1px 2px rgba(0,0,0,0.24);
+	position: fixed;
+	padding-top: 15px;
+	line-height: 1.4rem;
+}
+/* footer Section */
+
+/****************** For desktop: *****************/
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    
+    [class*="col-3"] {
+      width: 30%;
+    }
+    [class*="col-9"] {
+      width: 70%;
+      margin-left: 32%;
+    }
+    #heading
+    {
+        font-size: 1.5rem;
+    }
+    .footer
+    {
+        font-size: 11px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        line-height: 1em;
+    }
+    
+    .imgcontainer{
+        /* margin-top: 10px; */
+        margin-left: -15px;
+    }  
+
+  /* *********** ADMIN.EJS STYLE FOR PHONE START HERE ********/
+
+  #side-out
+  {
+  height: 500px;
+  
+  width: 130px;
+  }
+  .sidebar-profile
+  {
+  height: 70px;
+  width: 130px;
+  display: inline-block;
+  }
+
+  .sidebar-profile-image
+  {
+      margin-top: 13px;
+      width: 40px;
+      height: 40px;
+  }   
+  .circle
+    {
+      border-radius: 50%;
+      /*position: absolute;*/
+      width: 40px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      height: 40px;
+    }
+
+    .sidebar-profile-info
+      {
+          display: inline-block;
+          height: 40px;
+          width: 60px;
+          margin-left:5px;
+          margin-top: 5px;
+          /*margin: 5px;*/
+          font-size: 16px;
+          position: absolute;
+          text-align: center;
+      }
+
+        .sidebar-menu{
+          margin-top: 70px;
+          height:450px;  
+          width: 130px;
+          z-index: 1;
+        }
+      .sidebar-menu  a, .dropdown-btn {
+          font-size: 13px;
+          width: 130px;
+        }
+
+        .card-container
+        {
+        height: 70px;
+        width:350px;
+        margin-left: -15px;
+        /*border:1px solid black;*/
+        position: relative;
+        } 
+        #card1
+        {
+        height: 70px;
+        width: 100px;
+        position: absolute;
+        }
+        #card2
+        {
+        height: 70px;
+        width: 100px;
+        margin-left: 110px;
+        position: absolute;
+        }
+        #card3
+        {
+        height: 70px;
+        width: 100px;
+        margin-left: 220px;
+        position: absolute;
+        }
+        .card-heading
+        {
+        font-size: 13px;
+        font-weight: 600;
+        text-align: center;
+        }
+        p
+        {
+        text-align: center;
+        font-weight: 600;
+        font-size: 13px;
+        }
+      /**** main container dashboard ******/
+      .main-container
+      {
+      width: 350px;
+      margin-left: -15px;
+      font-size: 10px;
+      height: 400px;
+      }
+      #page-title
+      {
+      font-size: 13px;
+      font-weight: 700;
+      }
+      .main-container ul li
+      {
+      margin-left: -70px;
+
+      }
+        /******** ADD DEPARTMENT CODE *******/
+        .add-department
+        {                   
+          height: 400px;
+          margin-left: 15px;
+          width: 300px;
+        }
+        /* ADD LEAVE CODE */
+        .add-leave
+        {                   
+          height: 400px;
+          margin-left: -15px;
+          width: 300px;
+        }
+        .add-leave{
+          width: 50%;
+          height: 50%;
+        }
+            /*************** ADD EMPLOYEE ******************/
+          .add-employee
+          {
+            width: 330px;
+            margin-left: 15px;
+            height: 500px;
+
+          }
+          label
+          {
+            display: block;
+            margin-left:35px;
+            font-size: 13px;
+            color: darkslateblue;
+            margin-top: 5px;
+          }
+          input {
+            width: 80%;
+            padding: 8px 16px;
+            margin: 8px 16px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+          }
+          select
+          {
+            width: 60%;
+            padding: 8px 16px;
+            margin: 8px 16px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box
+          }
+
+            /*************** ADD EMPLOYEE ******************/
+            .add-employee
+            {
+              width: 330px;
+              margin-left: 15px;
+              height: 500px;
+    
+            }
+            label
+            {
+              display: block;
+              margin-left:35px;
+              font-size: 13px;
+              color: darkslateblue;
+              margin-top: 5px;
+            }
+            input {
+              width: 80%;
+              padding: 8px 16px;
+              margin: 8px 16px;
+              display: inline-block;
+              border: 1px solid #ccc;
+              box-sizing: border-box;
+            }
+            select
+            {
+                width: 60%;
+              padding: 8px 16px;
+              margin: 8px 16px;
+              display: inline-block;
+              border: 1px solid #ccc;
+              box-sizing: border-box
+            }  
+             
+}
