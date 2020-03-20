@@ -1,4 +1,4 @@
-// Import the Admin Achema from model
+// Import the Admin Schema from model
 const Admin = require('../models/admin');
 
 module.exports.admin = function(req, res){
@@ -69,41 +69,48 @@ module.exports.destroySession = function(req, res){
     return res.redirect('/');
 }
 
-// **************** ADD DEPARTMENT BY ADMIN *************************
-module.exports.addDepartment = function(req, res){
-  if(req.isAuthenticated()){
-       return res.render('add_department',{
-           title :"Add Department"
-       })
-  }
-  return res.redirect('/');
-}
-// *************** dashboard *************
+
+
+// *************** Render the dashboard page *************
 module.exports.dashBoard = function(req, res){
     if(req.isAuthenticated()){
         return res.render('_dashboard',{
             title : "DashBoard"
         })
-        return res.redirect('/');
     }
+    return res.redirect('/');
 }
 
-// ************** add leave type by admin **************
+// ****************Render the add department page *************************
+module.exports.addDepartment = function(req, res){
+    if(req.isAuthenticated()){
+         return res.render('add_department',{
+             title :"Add Department"
+         })
+    }
+    return res.redirect('/');
+  }
+
+
+// ************** Render the add leave type page by admin  **************
 module.exports.addLeave = function(req, res){
     if(req.isAuthenticated()){
         return res.render('add_leave',{
             title : "Add Leave"
         })
-        return res.redirect('/');
     }
+    return res.redirect('/');
 }
 
-// *************** add employee by admin **************
+
+// *************** Render the add employee page by admin **************
 module.exports.addEmployee = function(req, res){
     if(req.isAuthenticated()){
         return res.render('add_employee',{
             title : "Add Employee"
         })
-        return res.redirect('/');
     }
+    return res.redirect('/');
 }
+
+

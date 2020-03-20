@@ -20,9 +20,9 @@ router.post('/create-session',passport.authenticate(
 router.get('/sign-out', adminController.destroySession);
 module.exports = router;  
 
-router.get('/add-department', adminController.addDepartment);
-
 router.get('/dashboard', adminController.dashBoard);
+
+router.get('/add-department', adminController.addDepartment);
 
 router.get('/add-leave', adminController.addLeave);
 

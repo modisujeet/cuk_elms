@@ -10,4 +10,10 @@ router.get('/',homeController.home);
 
 router.use('/admins',require('./admin'));
 
+router.use('/departments', require('./depart_route'));
+
+router.use('/employees', require('./employee'));
+
+router.use('/leaves', require('./leave'));
+
 module.exports = router;

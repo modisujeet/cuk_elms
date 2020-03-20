@@ -48,12 +48,18 @@ const employeeSchema = new mongoose.Schema({
         required : true
     },
     phone : {
-        type : Number,
+        type : String,
         required : true,
         unique : true
+     },
+     pincode : {
+         type : String,
+         required :true
      }
 },{
     timestamps  : true
 });
 
 const  Employee = mongoose.model('Employee', employeeSchema);
+
+module.exports = Employee;

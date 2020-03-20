@@ -5,11 +5,11 @@
     <div class="col-9">
         <h2 id="addleavetitle">Add Leave Type</h2>
         <div class="add-leave">
-            <form action="">
+            <form action="/leaves/create" method="POST">
                 <label for="leave"><b>Leave Type</b></label>
-                <input type="text" name="add leave" placeholder="Leave Name" required="true">
+                <input type="text" name="leavename" placeholder="Leave Name" required="true">
                 <label for="des"><b>Description</b></label>
-                <input type="text" name="Description" placeholder="Description" required="true">
+                <input type="text" name="description" placeholder="Description" required="true">
                 <button type="submit">Add</button>
             </form>
         </div>
