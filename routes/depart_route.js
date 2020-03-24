@@ -1,10 +1,14 @@
 const express = require('express');
 const router = express.Router();
-
-const addDepartController = require('../controllers/add_dep_controller');
-
+const passport = require('passport'); 
 
 
-router.post('/create', addDepartController.create);
+const departController = require('../controllers/department_controller');
+
+
+
+router.post('/create', departController.create);
+
+router.get('/destroy/:id', passport.checkAuthentication, departController.destroy);
 
 module.exports = router;

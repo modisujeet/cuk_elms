@@ -1,0 +1,39 @@
+<%- include('_admin'); %>
+<div class="col-9">
+        <div id="department_container">
+                <p>MANAGE DEPARTMENTS </p>
+        
+             <table class="tbl">
+                 <thead>
+                     <tr>
+                         <th>Sr no</th>
+                         <th>Dept Name</th>
+                         <th>Short Name</th>
+                         <th>Dept Code</th>
+                         <th>Creation Date</th>
+                         <th>Action</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                    <% for(department of departments){ %>
+
+                     <tr>
+                         <td class="count"></td>   
+                         <td> <%= department.departmentname %></td>
+                         <td><%= department.shortname %></td>
+                         <td> <%= department.departmentcode %></td>
+                         <td> <%= department.createdAt %></td>
+                         <td><a href="/departments/destroy/<%= department.id %>"><i class="fas fa-trash"></i></a>
+                             <a href=""><i class="fas fa-edit"></i></a>   
+                        </td>
+                     </tr>
+                     <% } %>
+
+                 </tbody>
+           
+             </table>
+             <script>
+              
+            </script>
+        </div>
+</div>

@@ -13,6 +13,10 @@ const departmentSchema = new mongoose.Schema({
     departmentcode : {
         type : String,
         required : true
+    },
+    user : {
+        type : mongoose.Schema.Types.ObjectId,
+        ref  : 'Admin'
     }
 },{
     timestamps : true   

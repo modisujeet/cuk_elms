@@ -8,6 +8,13 @@
                         <img src="../images/img.jpg" class="circle" alt="admin">
                     </div>
                     <div class="sidebar-profile-info">
+                        <ul>
+                        <% if(locals.user) { %>
+                            <li>
+                                <%= admin.name %>
+                            </li>
+                         <% } %>   
+                        </ul>
                     </div>
                 </div>
                 <!-- sidebae menu list -->
@@ -26,7 +33,7 @@
                         </button>
                         <div class="dropdown-container">
                             <a href="/admins/add-department">Add Department</a>
-                            <a href="#">Manage Department</a>
+                            <a href="/admins/manage-department">Manage Department</a>
                         </div>
                     
                     <!-- Leave type  -->
