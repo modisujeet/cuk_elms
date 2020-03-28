@@ -1,9 +1,9 @@
 <%- include('_admin'); %>
 <div class="col-9">
         <div id="department_container">
-                <p>MANAGE DEPARTMENTS </p>
+                <h4><a class="btn btn-secondary" href="/admins/add-department"><i class="fa fa-plus"></i>Create New</a> DEPARTMENTS LIST </h4>
         
-             <table class="tbl">
+             <table class="table table-fluid" id="myTable">
                  <thead>
                      <tr>
                          <th>Sr no</th>
@@ -23,8 +23,8 @@
                          <td><%= department.shortname %></td>
                          <td> <%= department.departmentcode %></td>
                          <td> <%= department.createdAt %></td>
-                         <td><a href="/departments/destroy/<%= department.id %>"><i class="fas fa-trash"></i></a>
-                             <a href=""><i class="fas fa-edit"></i></a>   
+                         <td><a href=""><i class="fas fa-edit"></i></a>   
+                            <a href="/departments/destroy/<%= department.id %>"><i class="fas fa-trash"></i></a>
                         </td>
                      </tr>
                      <% } %>
@@ -32,8 +32,6 @@
                  </tbody>
            
              </table>
-             <script>
-              
-            </script>
+           
         </div>
 </div>
