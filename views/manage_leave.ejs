@@ -1,0 +1,35 @@
+<%- include('_admin'); %>
+<div class="col-9">
+        <div id="leave_container">
+                <h4><a class="btn btn-secondary" href="/admins/add-leave"><i class="fa fa-plus"></i>Create New</a> LEAVES LIST </h4>
+        
+             <table class="table table-fluid" id="myTable">
+                 <thead>
+                     <tr>
+                         <th>Sr no</th>
+                         <th>Leave Type</th>
+                         <th>Description</th>
+                         <th>Creation Date</th>
+                         <th>Action</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                    <% for(leave of leaves){ %>
+
+                     <tr>
+                         <td class="count"></td>   
+                         <td> <%= leave.leavename %></td>
+                         <td><%= leave.description %></td>
+                         <td> <%= leave.createdAt %></td>
+                         <td><a href="/admins/edit-leave/<%= leave._id %>" ><i class="fas fa-edit"></i></a>   
+                            <a href="/admins/destroyData/<%= leave.id %>" onclick="return confirm('Are you sure to delete this record?'); "><i class="fas fa-trash"></i></a>
+                        </td>
+                     </tr>
+                     <% } %>
+
+                 </tbody>
+           
+             </table>
+           
+        </div>
+</div>

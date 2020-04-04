@@ -38,17 +38,7 @@ module.exports.destroy = function(req, res){
     });
 }
 
-//     Department.findById(req.params.id, function(err, department){
-//     // .id means converting the object id into string 
-//         if(department.admin == req.admin.id){
-//             department.remove();
-//         }
-//         else{
-//             return res.redirect('back');
-//         }
-//     });
-// }
-
+// **************** edit deparment *********************
 module.exports.editDepartment = function(req, res){
     Department.findById(req.params.id, function(err, department){
         if(!err){
@@ -60,6 +50,7 @@ module.exports.editDepartment = function(req, res){
     });
 }
 
+// ****************** Update Department *********************
 module.exports.updateDepartment = function(req, res){
     Department.findOneAndUpdate({ _id : req.body._id}, req.body, {new : true}, function(err, department){
         if(!err){

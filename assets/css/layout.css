@@ -571,7 +571,16 @@ background-color: darkslateblue;
    padding: 12px;
  }
 
-
+ #leave_container{
+  height: calc(450px + 200px);
+  width: 1000px;
+  margin-left: -20px;
+  position: relative;   
+  margin-top: 100px;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 7px rgba(0,0,0,0.12), 0 1px 9px rgba(0,0,0,0.24);
+  z-index: 0;
+}
 
 
 
