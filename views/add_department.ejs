@@ -6,12 +6,13 @@
         <h2 id="addeparttitle">Add Department</h2>
         <div class="add-department">
             <form action="/departments/create" method="POST" >
+            
                 <label for="depname"><b>Department Name</b></label>
                 <input type="text" name="departmentname" placeholder="Department Name" required="true">
                 <label for="shortname"><b>Department Short Name</b></label>
-                <input type="text" name="shortname" placeholder="Department Short Name" required="true">
+                <input type="text" name="shortname" placeholder="Department Short Name" required="true" >
                 <label for="code"><b>Department Code</b></label>
-                <input type="text" name="departmentcode" placeholder="Department Code" required="true">
+                <input type="text" name="departmentcode" placeholder="Department Code" required="true" >
                 <button type="submit">Add</button>
                 <a class="btn btn-secondary btn1" href="/admins/manage-department"><i class="fa fa-list-alt"></i>View All</a>
             </form>

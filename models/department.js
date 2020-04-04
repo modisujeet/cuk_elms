@@ -14,7 +14,7 @@ const departmentSchema = new mongoose.Schema({
         type : String,
         required : true
     },
-    user : {
+    admin : {
         type : mongoose.Schema.Types.ObjectId,
         ref  : 'Admin'
     }

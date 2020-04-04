@@ -9,6 +9,7 @@ const departController = require('../controllers/department_controller');
 
 router.post('/create', departController.create);
 
-router.get('/destroy/:id', passport.checkAuthentication, departController.destroy);
+
+router.post('/update-department', departController.updateDepartment);
 
 module.exports = router;

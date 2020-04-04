@@ -23,8 +23,8 @@
                          <td><%= department.shortname %></td>
                          <td> <%= department.departmentcode %></td>
                          <td> <%= department.createdAt %></td>
-                         <td><a href=""><i class="fas fa-edit"></i></a>   
-                            <a href="/departments/destroy/<%= department.id %>"><i class="fas fa-trash"></i></a>
+                         <td><a href="/admins/edit-department/<%= department._id %>" ><i class="fas fa-edit"></i></a>   
+                            <a href="/admins/destroy/<%= department.id %>" onclick="return confirm('Are you sure to delete this record?'); "><i class="fas fa-trash"></i></a>
                         </td>
                      </tr>
                      <% } %>

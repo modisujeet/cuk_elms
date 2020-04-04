@@ -35,3 +35,9 @@ router.get('/add-employee', adminController.addEmployee);
 
 // **************** routes for the manage department *************
 router.get('/manage-department', departController.manageDepartment);
+
+// ***************** routes for the edit department ******************
+
+router.get('/edit-department/:id', departController.editDepartment);
+
+router.get('/destroy/:id', departController.destroy);

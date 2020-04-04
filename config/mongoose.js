@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+mongoose.set('useFindAndModify', false);
 mongoose.connect('mongodb://localhost/cuk_elms');
 
 const db = mongoose.connection;
