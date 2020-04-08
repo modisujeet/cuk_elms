@@ -5,4 +5,7 @@ const employeeController = require('../controllers/employee_controller');
 
 router.post('/create', employeeController.create);
 
+router.post('/update-employee', employeeController.updateEmployee);
+
+
 module.exports = router;

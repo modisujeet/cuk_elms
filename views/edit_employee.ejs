@@ -1,0 +1,48 @@
+
+
+        <%- include('_admin'); %>
+    
+        <!-- ********************** ADD LEAVE CODE START HERE ***************************  -->
+        <div class="col-9">
+            <h2 id="addemployeetitle">Add Employee</h2>
+            <div class="add-employee">
+                <form action="/employees/update-employee" method="POST">
+                        <input type="hidden" name="_id" value="<%= employee._id %>" >
+                    <div id="input-left">	
+                            <label class="lab" for="emp"><b>Employee Code</b></label>
+                            <input class="inp" type="text" name="employee_code"  required="true" value="<%= employee.employee_code %>">
+                            <label  class="lab" for="fname"><b>First Name</b></label>
+                            <input class="inp" type="text" name="firstname"  required="true" value="<%= employee.firstname %>">
+                            <label class="lab" for="lname"><b>Last Name</b></label>
+                            <input class="inp" type="text" name="lastname"  required="true" value="<%= employee.lastname %>">
+                            <label class="lab" for="label"><b>Email-id</b></label>
+                            <input class="inp" type="text" name="email" required="true" value="<%= employee.email %>">
+                    </div>		
+    
+                    <div id="input-center">	
+                            <label class="lab" for="reg_date"><b>Registration Date</b></label>
+                            <input class="inp" type="text" name="reg_date"  value="<%= employee.reg_date %>">
+                            <label for="status" class="lab"><b>Status</b></label> 
+                            <input type="text" name="status" value="<%= employee.status %>">   
+                            <label class="lab" for="department"><b>Your Department</b></label>
+                            <input class="inp" type="text" name="department"  required="true" value="<%= employee.department %>">
+                            <label class="lab" for="address"><b>Country</b></label>
+                            <input class="inp" type="text" name="country"  required="true" value="<%= employee.country %>" >
+                    </div>		
+    
+                    <div id="input-right">	
+                            <label class="lab" for="city"><b>City/Town</b></label>
+                            <input class="inp" type="text" name="city"  required="true" value="<%= employee.city %>" >
+                            <label class="lab" for="state"><b>State</b></label>
+                            <input class="inp" type="text" name="state"  required="true" value="<%= employee.state %>" >
+                            <label class="lab" for="pin"><b>Pin Code</b></label>
+                            <input class="inp" type="tet" name="pincode"  required="true" value="<%= employee.pincode %>">
+                            <label class="lab" for="number"><b>Mobile Number</b></label>
+                            <input class="inp" type="text" name="phone" required="true" value="<%= employee.phone %>">
+                            <button type="submit">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        

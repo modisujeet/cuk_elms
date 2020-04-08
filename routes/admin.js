@@ -4,7 +4,8 @@ const passport = require('passport');
 
 const adminController = require('../controllers/admin_controller');
 const departController = require('../controllers/department_controller');
-const leaveController =require('../controllers/leave_controller');
+const leaveController = require('../controllers/leave_controller');
+const employeeController = require('../controllers/employee_controller');
 
 router.get('/admin', passport.checkAuthentication, adminController.admin);
 
@@ -48,3 +49,8 @@ router.get('/manage-leave', leaveController.manageLeave);
 router.get('/edit-leave/:id', leaveController.editLeave);
 
 router.get('/destroyData/:id', leaveController.destroyData);
+
+// ///////////////////////////////////////////////////
+router.get('/manage-employee', employeeController.manageEmployee);
+
+router.get('/edit-employee/:id', employeeController.editEmployee);

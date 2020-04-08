@@ -1,0 +1,46 @@
+<%- include('_admin'); %>
+<div class="col-9">
+        <div id="leave_container">
+                <h4><a class="btn btn-secondary" href="/admins/add-employee"><i class="fa fa-plus"></i>Create New</a> EMPLOYEES LIST </h4>
+        
+             <table class="table table-fluid" id="myTable">
+                 <thead>
+                     <tr>
+                         <th>Sr no</th>
+                         <th>Emp Id</th>
+                         <th>Full Name</th>
+                         <th>Department</th>
+                         <th>Status</th>
+                         <th>Reg. Date</th>
+                         <th>Action</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                    <% for(employee of employee){ %>
+
+                     <tr>
+                         <td class="count"></td>   
+                         <td> <%= employee.employee_code %></td>
+                         <td><%= employee.firstname%> <%= employee.lastname%></td>
+                         <td> <%= employee.department %></td>
+                         <td>   
+                        <% if(employee.status == 'Active'){ %>
+                            <a style="color: green;" ><%= employee.status %> </a>
+                    
+                        <% } else { %> 
+                            <a style="color: red;">Inactive</a>
+                        <% } %>
+                        </td>
+                         <td> <%= employee.reg_date.toDateString() %></td>
+                         <td><a href="/admins/edit-employee/<%= employee._id %>" ><i class="fas fa-edit"></i></a>  
+                        
+                        </td>
+                     </tr>
+                     <% } %>
+
+                 </tbody>
+           
+             </table>
+           
+        </div>
+</div>

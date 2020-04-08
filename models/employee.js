@@ -27,6 +27,11 @@ const employeeSchema = new mongoose.Schema({
          type : String,
          required : true
     },
+    reg_date : {
+        type : Date,
+        default : Date.now,
+        required : true
+    },
     dob : {
         type : Date,
         required : true 
@@ -55,6 +60,10 @@ const employeeSchema = new mongoose.Schema({
      pincode : {
          type : String,
          required :true
+     },
+     status : {
+         type : String,
+         default : 'Active'
      }
 },{
     timestamps  : true
